@@ -4,16 +4,23 @@ A guide on how to contribute to 'voice-revive'.
 
 ## Branching
 
+### Main
+
 This project follows a standard approach. The `main` branch is for **stable, production-ready** release versions of the code. It is also the repository's default branch.  
 **Only** the `dev` branch is allowed to interact with `main` via merges or rebases.  
-Exceptions are solely made for branches that are associated with an issue of `Critical` priority (described later).  
+Exceptions are solely made for branches that are associated with an issue of `Critical` priority ([see Priority and Size](#priority--size)).  
 
-The `dev` branch exists for **ongoing changes**. Feature branches divert from here and are integrated back via merges or rebases.  
-Each feature branch **must** have an associated issue, and in fact, **must** be created from an issue (described later).  
-In turn, each issue **must** be created from an issue form (as described later) and not via an empty issue.  
-The names of branches follow the pattern `[issue-number]-[kebap-cased-issue-type]-[kebap-cased-issue-name]`  
-(without brackets) but this gets generated automatically when following the specified process for issue creations (described later).  
+### Dev
+
+The `dev` branch exists for **ongoing changes**. **Feature branches** divert from here and are integrated back via merges or rebases.  
 The bare minimum for a merge/rebase of a feature branch into `dev` is a passing pipeline **and** fulfilling all acceptance criteria of the issue.  
+
+### Feature Branches
+
+Each feature branch **must** have an associated issue, and in fact, **must** be created from an issue ([see Issue Creation](#issue-creation) step 11, and step 1 to 5).  
+In turn, each issue **must** be created from an issue form ([see Issue Creation](#issue-creation) step 1 to 5) and **not** via a blank issue.  
+The names of branches follow the pattern `[issue-number]-[kebap-cased-issue-type]-[kebap-cased-issue-name]` (without brackets).  
+This is generated automatically by following the specified process for [issue creations](#issue-creation), especially step 6.  
 
 ## Commits
 
